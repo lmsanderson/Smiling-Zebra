@@ -5,7 +5,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
 audio[controls],canvas,video{display:inline-block;*display:inline;*zoom:1;}
 
 html{font-size:100%;overflow-y:scroll;-webkit-overflow-scrolling:touch;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
-body{margin:0;font-size:13px;line-height:1.231;}
+body{background:#f2f2f2;margin:0;font-size:13px;line-height:1.231;}
 body,button,input,select,textarea{font-family:sans-serif;color:#222;}
 
 ::-moz-selection{background:#fe57a1;color:#fff;text-shadow:none;}
@@ -94,10 +94,10 @@ primary styles
 
 	/*fonts*/
 	h1{color:#333333;font-family:"Pacifico","Helvetica","Arial",Sans-Serif;font-size:3em;font-weight:300;line-height:1em;}/*page titles*/
-	h2{font-size:2.4em;font-weight:600;line-height:1em;}/*reserved for sub page titles/site*/
-	h3{font-size:1.6em;font-weight:600;text-transform:uppercase;}/*content titles*/
+	h2{color:#333333;font-size:2.4em;font-weight:600;line-height:1em;}/*reserved for sub page titles/site*/
+	h3{color:#333333;;font-size:1.6em;font-weight:600;text-transform:uppercase;}/*content titles*/
 	h4{color:#8fbdd4;font-family:"Quicksand","Helvetica","Arial",Sans-Serif;font-size:1em;font-weight:500;}/*in content titles, first level*/
-	h5{font-size:1.4em;font-weight:300;text-transform:uppercase;}/*in content titles, second level*/
+	h5{color:#333333;font-size:1.4em;font-weight:300;text-transform:uppercase;}/*in content titles, second level*/
 	
 	.post p{color:#333333;font-size:1.1em;line-height:1.5em;margin-bottom:10px;}
 	sub{}
@@ -106,12 +106,13 @@ primary styles
 		/*specialized*/
 		.latest{border-bottom:1px solid #8fbdd4;float:left;margin-right:10px;padding-bottom:2px;}
 		
+		.metadata h3,.metadata h5{color:#b0b0b0;}
 		/*@*/
 		
 	/*@*/
 	
 	/*icons and logos*/
-	#logo{margin-bottom:20px;}
+	#logo{margin-bottom:30px;}
 	/*@*/
 	
 	/*anchors*/
@@ -145,10 +146,11 @@ primary styles
 	/*@-@*/
 	
 	/*@#main*/
-		#main{min-height:400px;padding-top:20px}
+		#contentarea{overflow:visible;}
+		#main{background:#ffffff;border:1px solid #c0c0c0;box-shadow:0px 0px 5px #d0d0d0;min-height:400px;padding-top:20px}
 			
 			/*@.metadata*/
-			#main .metadata{border-right:1px solid #222222;color:#d0d0d0;margin-right:2.3%;padding-bottom:10px;padding-right:1.5%;padding-top:10px;}
+			#main .metadata{border-right:1px solid #222222;margin-right:2.3%;padding-bottom:10px;padding-right:1.5%;padding-top:10px;}
 			/*@*/
 			
 			/*@.post*/
@@ -160,7 +162,7 @@ primary styles
 	/*@-@*/
 	
 	/*@!footer*/
-		#sitefooter{height:100px;}
+		#sitefooter{height:100px;margin-top:10px;}
 	/*@-@*/
 
 /*@--@*/
