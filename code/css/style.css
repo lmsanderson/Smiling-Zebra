@@ -1,205 +1,90 @@
 /*
- * HTML5 Boilerplate
- *
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+html5 boilerplate*
+*/
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
+audio[controls],canvas,video{display:inline-block;*display:inline;*zoom:1;}
 
+html{font-size:100%;overflow-y:scroll;-webkit-overflow-scrolling:touch;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+body{margin:0;font-size:13px;line-height:1.231;}
+body,button,input,select,textarea{font-family:sans-serif;color:#222;}
 
-/* =============================================================================
-   HTML5 element display
-   ========================================================================== */
+::-moz-selection{background:#fe57a1;color:#fff;text-shadow:none;}
+::selection{background:#fe57a1;color:#fff;text-shadow:none;}
 
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-
-
-/* =============================================================================
-   Base
-   ========================================================================== */
-
-/*
- * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
- *    http://clagnut.com/blog/348/#c790
- * 2. Force vertical scrollbar in non-IE
- * 3. Remove Android and iOS tap highlight color to prevent entire container being highlighted
- *    www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
- * 4. Prevent iOS text size adjust on device orientation change, without disabling user zoom
- *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
- */
-
-html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-
-body { margin: 0; font-size: 13px; line-height: 1.231; }
-
-body, button, input, select, textarea { font-family: sans-serif; color: #222; }
-
-/* 
- * These selection declarations have to be separate
- * No text-shadow: twitter.com/miketaylr/status/12228805301
- * Also: hot pink!
- */
-
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
-
-
-/* =============================================================================
-   Links
-   ========================================================================== */
-
-a { color: #00e; }
-a:visited { color: #551a8b; }
-a:focus { outline: thin dotted; }
+a{color:#00e;}
+a:visited{color:#551a8b;}
+a:focus{outline:thin dotted;}
 
 /* Improve readability when focused and hovered in all browsers: people.opera.com/patrickl/experiments/keyboard/test */
-a:hover, a:active { outline: 0; }
+a:hover,a:active {outline: 0;}
 
+abbr[title]{border-bottom:1px dotted;}
 
-/* =============================================================================
-   Typography
-   ========================================================================== */
+b,strong{font-weight:bold;}
 
-abbr[title] { border-bottom: 1px dotted; }
+blockquote{margin:1em 40px;}
 
-b, strong { font-weight: bold; }
+dfn {font-style: italic;}
 
-blockquote { margin: 1em 40px; }
+hr{display:block;height: 1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}
 
-dfn { font-style: italic; }
+ins{background:#ff9;color:#000;text-decoration:none;}
 
-hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
-
-ins { background: #ff9; color: #000; text-decoration: none; }
-
-mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+mark{background:#ff0;color:#000;font-style:italic;font-weight:bold; }
 
 /* Redeclare monospace font family: en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
-pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre,code,kbd,samp{font-family:monospace,monospace;_font-family:'courier new',monospace;font-size:1em;}
 
 /* Improve readability of pre-formatted text in all browsers */
-pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word;}
 
-q { quotes: none; }
-q:before, q:after { content: ""; content: none; }
+q{quotes:none;}
+q:before,q:after{content:"";content: none;}
 
-small { font-size: 85%; }
+small{font-size:85%;}
 
 /* Position subscript and superscript content without affecting line-height: gist.github.com/413930 */
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
 
+ul, ol{margin:1em 0;padding:0 0 0 40px;}
+dd{margin:0 0 0 40px;}
+nav ul,nav ol{list-style: none;margin:0;padding:0;}
 
-/* =============================================================================
-   Lists
-   ========================================================================== */
+img{border:0;-ms-interpolation-mode:bicubic;}
 
-ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
-dd { margin: 0 0 0 40px; }
-nav ul, nav ol { list-style: none; margin: 0; padding: 0; }
+svg:not(:root){overflow: hidden;}
 
+figure{margin:0;}
 
-/* =============================================================================
-   Embedded content
-   ========================================================================== */
+form{margin:0;}
+fieldset{border:0;margin:0;padding:0;}
 
-/*
- * Improve image quality when scaled in IE7
- * code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
- */
-
-img { border: 0; -ms-interpolation-mode: bicubic; }
-
-/*
- * Correct overflow displayed oddly in IE9 
- */
-
-svg:not(:root) {
-    overflow: hidden;
-}
-
-
-/* =============================================================================
-   Figures
-   ========================================================================== */
-
-figure { margin: 0; }
-
-
-/* =============================================================================
-   Forms
-   ========================================================================== */
-
-form { margin: 0; }
-fieldset { border: 0; margin: 0; padding: 0; }
-
-/* 
- * 1. Correct color not inheriting in IE6/7/8/9 
- * 2. Correct alignment displayed oddly in IE6/7 
- */
-
-legend { border: 0; *margin-left: -7px; padding: 0; }
+legend{border:0;*margin-left:-7px;padding:0;}
 
 /* Indicate that 'label' will shift focus to the associated form element */
-label { cursor: pointer; }
+label{cursor: pointer;}
 
-/*
- * 1. Correct font-size not inheriting in all browsers
- * 2. Remove margins in FF3/4 S5 Chrome
- * 3. Define consistent vertical alignment display in all browsers
- */
+button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle;}
 
-button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button,input{line-height:normal;*overflow:visible;}
 
-/*
- * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
- * 2. Correct inner spacing displayed oddly in IE6/7
- */
+button,input[type="button"],input[type="reset"],input[type="submit"]{cursor: pointer;-webkit-appearance:button;}
 
-button, input { line-height: normal; *overflow: visible; }
+input[type="checkbox"],input[type="radio"]{box-sizing: border-box;}
+input[type="search"]{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
 
-/*
- * 1. Display hand cursor for clickable form elements
- * 2. Allow styling of clickable form elements in iOS
- */
-
-button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
-
-/*
- * Consistent box sizing and appearance
- */
-
-input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
-input[type="search"] { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
-
-/* 
- * Remove inner padding and border in FF3/4
- * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ 
- */
-
-button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+button::-moz-focus-inner,input::-moz-focus-inner{border: 0;padding:0;}
 
 /* Remove default vertical scrollbar in IE6/7/8/9 */
-textarea { overflow: auto; vertical-align: top; }
+textarea{overflow:auto;vertical-align:top;}
 
 /* Colors for form validity */
-input:valid, textarea:valid {  }
-input:invalid, textarea:invalid { background-color: #f0dddd; }
+input:valid,textarea:valid{}
+input:invalid,textarea:invalid{background-color:#f0dddd;}
 
-
-/* =============================================================================
-   Tables
-   ========================================================================== */
-
-table { border-collapse: collapse; border-spacing: 0; }
-
-
-/* =============================================================================
-   Primary styles
-   Author: 
-   ========================================================================== */
+table{border-collapse:collapse;border-spacing: 0;}
 
 /*
 primary styles
@@ -208,8 +93,26 @@ primary styles
 /*elements*/
 
 	/*fonts*/
+	h1{font-size:1.5em;font-weight:600;}/*page titles*/
+	h2{font-size:1.2em;font-weight:100;}/*reserved for sub page titles/site*/
+	h3{font-size:1.1em;font-weight:400;text-transform:uppercase;}/*content titles*/
+	h4{color:#648494;font-family:"Quicksand","Helvetica","Arial",Serif;font-size:1.2em;font-weight:500;}/*in content titles, first level*/
+	h5{font-size:1em;font-weight:600;text-transform:uppercase;}/*in content titles, second level*/
+	
 	p{font-size:1em;line-height:1.5em;}
-		#main p{margin-bottom:10px;}
+	sub{}
+	small{}
+	
+		/*specialized*/
+		.latest{float:left;margin-right:10px;}
+		/*@*/
+		
+	/*@*/
+	
+	
+	/*anchors*/
+	a{color:#333333;text-decoration:none;}
+	a:hover,a:focus{text-decoration:underline;}
 	/*@*/
 	
 /*@--@*/
@@ -217,47 +120,23 @@ primary styles
 /*structure*/
 
 	/*@#masthead*/
-	#masthead{background:red;height:70px;}
-		#masthead .container{margin:15px 0;}
-	
-	#textsizing{background:#ffffff;border-radius:5px;}
-		#textsizing .inner{margin:10px 0;text-align:center;}
-	
-	#language{background:#ffffff;border-radius:5px;}
-		#language .inner{margin:10px 0;text-align:center;}
-	
-	#search{}
-		#search .inner{background:#ffffff;border-radius:5px;width:85%;}
-		#search .field{background:#ffffff;border:0;border-radius:5px;height:35px;padding:0 5px;outline:0;}
+		#masthead{background:#f0f0f0;border-bottom:1px solid #d0d0d0;box-shadow:inset 0 -10px 20px -10px #d0d0d0;height:65px;max-width:100%;}
 	/*@*/
 	
 	/*@header*/
-	header{margin-top:20px;}
-		
-		/*@#abstract*/
-		#abstract li{float:left;margin-right:25px;}
-			#abstract li:last-child{margin-right:0;}
-		/*@*/
-		
-		/*@#user*/
-		#user{background:purple;}
-			#user .inner{margin:10px;}
-			#user a{color:#ffffff;}
-		/*@*/
-		
+		#siteheader{margin:20px auto;max-width:1140px;}
 	/*@-@*/
 	
 	/*@#primary*/
-	#primary{background:#d0d0d0;margin-top:20px;padding:10px 0;}
-		#primary li{float:left;}
+	
 	/*@-@*/
 	
 	/*@#main*/
-	#main{margin-top:20px;}
+		#main{min-height:400px;}
 	/*@-@*/
 	
 	/*@!footer*/
-	footer{background:#333333;height:10em;}
+		#sitefooter{height:100px;}
 	/*@-@*/
 
 /*@--@*/
