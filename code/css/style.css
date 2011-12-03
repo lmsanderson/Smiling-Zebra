@@ -93,8 +93,8 @@ primary styles
 /*elements*/
 
 	/*fonts*/
-	h1{color:#8fbdd4;font-family:"Pacifico","Helvetica","Arial",Sans-Serif;font-size:1.8em;font-weight:300;line-height:1em;text-shadow:1px 1px 0px #ffffff;}/*page titles*/
-	h2{color:#333333;font-size:1.4em;font-weight:600;line-height:1em;}/*reserved for sub page titles/site*/
+	h1{color:#8fbdd4;font-family:"Pacifico","Helvetica","Arial",Sans-Serif;font-size:2em;font-weight:300;line-height:1em;text-shadow:1px 1px 0px #ffffff;}/*page titles*/
+	h2{color:#333333;font-size:1.8em;font-weight:600;line-height:1em;}/*reserved for sub page titles/site*/
 	h3{color:#333333;;font-size:1.6em;font-weight:600;text-transform:uppercase;}/*content titles*/
 	h4{}/*in content titles, first level*/
 	h5{color:#333333;font-size:1.4em;font-weight:300;text-transform:uppercase;}/*in content titles, second level*/
@@ -114,16 +114,16 @@ primary styles
 	/*@*/
 	
 	/*anchors*/
-	a{color:#999999;text-decoration:none;}
+	a{color:#555555;text-decoration:none;}
 		a:hover,a:focus{text-decoration:underline;}
 		
 		nav a{padding-bottom:2px;}
 			nav a:hover,nav a:focus{border-bottom:1px solid #8fbdd4;text-decoration:none;}
 			nav a.active{border-bottom:1px solid #8fbdd4;font-weight:600;}
 		
-		.readinglist a{border-bottom:1px solid #c0c0c0;color:#333;display:block;transition:background 300ms ease-in 200ms;}
+		.readinglist a{border-bottom:1px solid #c0c0c0;color:#333;display:block;transition:all 300ms ease-in 200ms;}
 			.readinglist a:last-child{border-bottom:none;}
-			.readinglist a:hover,.readinglist a:focus{background:#8fbdd4;text-decoration:none;}
+			.readinglist a:hover,.readinglist a:focus{background:#e6e6e6;box-shadow:0px 10px 15px #a0a0a0;text-decoration:none;transform:scale(1.1);}
 		
 		.latest{border-bottom:1px solid #8fbdd4;color:#8fbdd4;font-family:"Quicksand","Helvetica","Arial",Sans-Serif;font-size:1em;font-weight:600;margin-right:10px;padding-bottom:2px;text-shadow:1px 1px 0px #ffffff;}
 			.latest:hover{text-decoration:none;}
@@ -144,6 +144,24 @@ primary styles
 				.readinglist .title{font-size:1em;font-weight:600;}
 				.readinglist .listdata{font-size:0.9em;}
 		/*@*/
+	
+	/*.tooltip*/
+	.tooltip{display:none;font-weight:600;}
+		
+		#logo:hover .tooltip{display:block;position: absolute;
+left: 320px;
+top: 15px;
+background: #8fbdd4;
+padding: 10px 20px;
+box-shadow: 5px 5px 0px #A0A0A0;
+color: #F2F2F2;
+border-top-left-radius: 30px 30px;
+border-bottom-left-radius: 30px 30px;
+border-top-right-radius: 3px;
+border-bottom-right-radius:3px;}
+		
+		
+	/*@*/
 	
 	/*@*/
 	

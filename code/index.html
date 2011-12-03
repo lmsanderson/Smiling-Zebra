@@ -17,7 +17,9 @@
 	<!-- 1140px Grid styles for IE -->
 	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
 	<!-- The 1140px Grid - http://cssgrid.net/ -->
-	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen">
+	
+	<link rel="stylesheet" href="css/animate.css" type="text/css" media="screen">
 	
 	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
 	<script type="text/javascript" src="js/libs/css3-mediaqueries.js"></script>
@@ -29,7 +31,7 @@
 	<script src="js/libs/modernizr-2.0.min.js"></script>
 	<script src="js/libs/respond.min.js"></script>
 </head>
-<body>
+<body class="animated fadeIn">
 	
 	<div id="container">
 				
@@ -40,12 +42,13 @@
 				<div class="container">
 					<div id="logo" class="fourcol">
 						<h1>Smiling Zebra</h1>
+						<span class="tooltip animated fadeInDown">Hello! If you just can't get enough, find me on Google+: <a href="#">+Matthew Sanderson</a></span>
 					</div>
 					<!-- @#logo-->
 					
 					<div id="feed" class="eightcol last">
 							<a class="latest">Thoughts</a>
-							<a class="thought" href="#" title="#">Lorem ipsum dolar sit ahmet</a>
+							<a class="thought" href="#">Lorem ipsum dolar sit ahmet</a>
 						</div>
 						<!-- @#feed-->
 					
@@ -266,7 +269,7 @@
 					<aside class="contentextender threecol last">
 						
 						<ul class="readinglist">
-							<a href="#" title="#">
+							<a href="#">
 								<li class="listcontainer">
 									<ul>
 										<li class="title">What is hoverIntent?</li>
@@ -275,7 +278,7 @@
 								</li>
 							</a>
 							
-							<a href="#" title="#">
+							<a href="#">
 								<li class="listcontainer">
 									<ul>
 										<li class="title">What is hoverIntent?</li>
@@ -283,7 +286,7 @@
 									</ul>
 								</li>
 							</a>
-							<a href="#" title="#">
+							<a href="#">
 								<li class="listcontainer">
 									<ul>
 										<li class="title">What is hoverIntent?</li>
@@ -291,7 +294,7 @@
 									</ul>
 								</li>
 							</a>
-							<a href="#" title="#">
+							<a href="#">
 								<li class="listcontainer">
 									<ul>
 										<li class="title">What is hoverIntent?</li>
@@ -299,7 +302,7 @@
 									</ul>
 								</li>
 							</a>
-							<a href="#" title="#">
+							<a href="#">
 								<li class="listcontainer">
 									<ul>
 										<li class="title">What is hoverIntent?</li>
@@ -314,7 +317,7 @@
 					<aside class="contentextender threecol last">
 						
 						<ul class="readinglist">
-							<a href="#" title="#">
+							<a href="#">
 								<li class="listcontainer">
 									<ul>
 										<li class="title">What is hoverIntent?</li>
@@ -323,7 +326,7 @@
 								</li>
 							</a>
 							
-							<a href="#" title="#">
+							<a href="#">
 								<li class="listcontainer">
 									<ul>
 										<li class="title">What is hoverIntent?</li>
@@ -331,7 +334,7 @@
 									</ul>
 								</li>
 							</a>
-							<a href="#" title="#">
+							<a href="#">
 								<li class="listcontainer">
 									<ul>
 										<li class="title">What is hoverIntent?</li>
@@ -339,7 +342,7 @@
 									</ul>
 								</li>
 							</a>
-							<a href="#" title="#">
+							<a href="#">
 								<li class="listcontainer">
 									<ul>
 										<li class="title">What is hoverIntent?</li>
@@ -347,7 +350,7 @@
 									</ul>
 								</li>
 							</a>
-							<a href="#" title="#">
+							<a href="#">
 								<li class="listcontainer">
 									<ul>
 										<li class="title">What is hoverIntent?</li>
@@ -393,11 +396,13 @@
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-
+	
+	<script src="js/libs/lazierload.js"></script>
+	
 	<script src="js/libs/prefixfree.js"></script>
 	
-	<script src="js/plugins.js"></script>
-	<script src="js/script.js"></script>
+	<script defer src="js/plugins.js"></script>
+	<script defer src="js/script.js"></script>
 
 	<script>
 		var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
