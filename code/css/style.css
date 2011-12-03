@@ -102,6 +102,8 @@ primary styles
 	small{}
 	
 		/*specialized*/
+		#siteintro h2{border-bottom:1px solid #222222;color:#333333;font-family:"Quicksand","Helvetica","Arial",Sans-Serif;font-size:3.4em;font-weight:1000;margin-top:10%;padding-bottom:2px;text-shadow:1px 1px 1px #666666;float:left;}
+		#attgrab p span{font-weight:600;}
 		.metadata h3,.metadata h5{color:#b0b0b0;}
 		/*@*/
 		
@@ -156,7 +158,7 @@ primary styles
 /*structure*/
 
 	/*@#masthead*/
-		#masthead{background:#f0f0f0;border-bottom:1px solid #d0d0d0;box-shadow:inset 0 -10px 20px -10px #d0d0d0;height:65px;max-width:100%;}
+		#masthead{background:#f0f0f0;border-bottom:1px solid #d0d0d0;height:65px;max-width:100%;}
 	/*@*/
 	
 	/*@header*/
@@ -169,7 +171,9 @@ primary styles
 	
 	/*@#aboutme*/
 	#siteintro{max-width:1140px;margin:0 auto;}
-	#aboutme{background:#333333 url(../img/backgrounds/thatched.png) repeat top left;box-shadow:0px 0px 5px #000;margin-bottom:20px;max-width:100%;min-height:400px;}
+	#aboutme{background:#333333 url(../img/backgrounds/thatched.png) repeat top left;box-shadow:inset 0px 0px 15px #111111, inset 0px 0px 15px #444444;margin-bottom:20px;max-width:100%;padding-bottom:20px;padding-top:20px;}
+	#attgrab{background:#8fbdd4;border-radius:3px;box-shadow:0px 0px 5px #111111;float:right;font-size:1.5em;font-weight:100;}
+		#attgrab .inner{margin:20px;}
 	/*@*/
 	
 	/*@#main*/
