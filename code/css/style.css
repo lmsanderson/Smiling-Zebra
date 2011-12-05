@@ -103,7 +103,7 @@ primary styles
 	
 		/*specialized*/
 		#siteintro h2{border-bottom:1px solid #222222;color:#333333;font-family:"Quicksand","Helvetica","Arial",Sans-Serif;font-size:3.4em;font-weight:1000;margin-top:10%;padding-bottom:2px;text-shadow:1px 1px 1px #666666;float:left;}
-		#attgrab p span{font-weight:600;}
+		#siteintro p span{font-weight:600;}
 		.metadata h3,.metadata h5{color:#b0b0b0;}
 		/*@*/
 		
@@ -145,12 +145,16 @@ primary styles
 				.readinglist .listdata{font-size:0.9em;}
 		/*@*/
 	
-	/*.tooltip*/
-	.tooltip{display:none;font-weight:600;}
-		
-		#logo:hover .tooltip{background:#8fbdd4;border-bottom-left-radius:30px 30px;border-bottom-right-radius:3px;border-top-left-radius:30px 30px;border-top-right-radius:3px;box-shadow:5px 5px 0px #a0a0a0;color:#f2f2f2;display:block;left:320px;padding:10px 20px;position:absolute;top:15px;}
 	/*@*/
 	
+	/*@.image*/
+	.image{background:#666666;border:1px solid #444444;box-shadow:inset 0px 0px 20px #000000;float:left;}
+		.image img{border:1px solid #444444;margin:10px;}
+	/*@*/
+	
+	/*@#expandcontract*/
+	#expandcontract{left:0;position:relative;right:0;text-align:center;}
+		#expandcontract span{background:#999999;box-shadow:inset 0px 0px 15px #444;font-weight:600;padding:15px;}
 	/*@*/
 	
 /*@--@*/
@@ -171,13 +175,13 @@ primary styles
 	
 	/*@#aboutme*/
 	#siteintro{max-width:1140px;margin:0 auto;}
-	#aboutme{background:#333333 url(../img/backgrounds/thatched.png) repeat top left;box-shadow:inset 0px 0px 15px #111111, inset 0px 0px 15px #444444;margin-bottom:20px;max-width:100%;padding-bottom:20px;padding-top:20px;}
-	#attgrab{background:#8fbdd4;border-radius:3px;box-shadow:0px 0px 5px #111111;float:right;font-size:1.5em;font-weight:100;}
-		#attgrab .inner{margin:20px;}
+	#aboutme{background:#333333 url(../img/backgrounds/thatched.png) repeat top left;box-shadow:inset 0px 0px 15px #111111, inset 0px 0px 15px #444444;display:none;max-width:100%;padding-bottom:20px;padding-top:20px;}
+	.listen{background:#8fbdd4;border-radius:3px;box-shadow:0px 0px 5px #111111;float:right;font-size:1.5em;font-weight:100;margin-bottom:20px;}
+		.listen .inner{margin:20px;}
 	/*@*/
 	
 	/*@#main*/
-	#contentarea{overflow:visible;}
+	#contentarea{margin-top:20px;overflow:visible;}
 			/*@.metadata*/
 			.metadata{border-left:1px solid #222222;float:right;padding-bottom:10px;padding-left:20px;padding-top:10px;}
 			/*@*/
@@ -205,6 +209,8 @@ primary styles
    Non-semantic helper classes
    Please define your styles before this section.
    ========================================================================== */
+
+/*@*/
 
 /* For image replacement */
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
