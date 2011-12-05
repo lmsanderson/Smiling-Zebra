@@ -153,8 +153,8 @@ primary styles
 	/*@*/
 	
 	/*@#expandcontract*/
-	#expandcontract{left:0;position:relative;right:0;text-align:center;}
-		#expandcontract span{background:#999999;box-shadow:inset 0px 0px 15px #444;font-weight:600;padding:15px;}
+	#expandcontract{left:0;position:relative;right:0;text-align:center;top:0;}
+		#expandcontract span{background:#fff;border-radius:5px;border-top:1px solid #999999;font-weight:600;padding:15px;}
 	/*@*/
 	
 /*@--@*/
@@ -176,8 +176,10 @@ primary styles
 	/*@#aboutme*/
 	#siteintro{max-width:1140px;margin:0 auto;}
 	#aboutme{background:#333333 url(../img/backgrounds/thatched.png) repeat top left;box-shadow:inset 0px 0px 15px #111111, inset 0px 0px 15px #444444;display:none;max-width:100%;padding-bottom:20px;padding-top:20px;}
-	.listen{background:#8fbdd4;border-radius:3px;box-shadow:0px 0px 5px #111111;float:right;font-size:1.5em;font-weight:100;margin-bottom:20px;}
-		.listen .inner{margin:20px;}
+	.breakout{border-radius:3px;box-shadow:0px 0px 5px #111111;float:right;font-size:1.5em;font-weight:100;}
+		.breakout .inner{margin:20px;}
+	.listen{background:#8fbdd4;margin-bottom:20px;}
+	#follow{background:#333333;margin-top:20px;}
 	/*@*/
 	
 	/*@#main*/
