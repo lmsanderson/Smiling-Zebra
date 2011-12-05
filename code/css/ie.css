@@ -41,3 +41,9 @@ width: 82%;
 .elevencol {
 width: 91.35%;
 }
+
+/*specifics*/
+#expandcontract{display:none;}
+#main .ninecol{width:100%;}
+.contentextender{display:none;}
+/*@*/
