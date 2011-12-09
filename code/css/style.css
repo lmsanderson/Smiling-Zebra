@@ -153,8 +153,6 @@ primary styles
 	/*@*/
 	
 	/*@#expandcontract*/
-	#expandcontract{left:0;position:relative;right:0;text-align:center;top:0;}
-		#expandcontract span{background:#fff;border-radius:5px;border-top:1px solid #999999;font-weight:600;padding:15px;}
 	#expandcontract{border-top:1px dashed #999999;cursor:pointer;left:0;position:relative;right:0;text-align:center;top:0;}
 		#expandcontract span{background:#ffffff;border-radius:5px;box-shadow:inset 0px 0px 5px #555555;font-weight:600;padding:15px;}
 	/*@*/
