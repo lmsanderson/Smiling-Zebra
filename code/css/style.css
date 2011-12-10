@@ -153,8 +153,8 @@ primary styles
 	/*@*/
 	
 	/*@#expandcontract*/
-	#expandcontract{left:0;position:relative;right:0;text-align:center;top:0;}
-		#expandcontract span{background:#fff;border-radius:5px;border-top:1px solid #999999;font-weight:600;padding:15px;}
+	#expandcontract{border-top:1px dashed #999999;cursor:pointer;left:0;position:relative;right:0;text-align:center;top:0;}
+		#expandcontract span{background:#ffffff;border-radius:5px;box-shadow:inset 0px 0px 5px #555555;font-weight:600;padding:15px;}
 	/*@*/
 	
 /*@--@*/
@@ -163,6 +163,7 @@ primary styles
 
 	/*@#masthead*/
 		#masthead{background:#f0f0f0;border-bottom:1px solid #d0d0d0;height:65px;max-width:100%;}
+		#masthead{background:url(../img/backgrounds/lightfabric.png) repeat top left;border-bottom:1px dashed #555555;height:65px;max-width:100%;}
 	/*@*/
 	
 	/*@header*/
@@ -175,6 +176,7 @@ primary styles
 	
 	/*@#aboutme*/
 	#siteintro{max-width:1140px;margin:0 auto;}
+	#siteintro{border-bottom:1px dashed #555555;max-width:1140px;margin:0 auto;}
 	#aboutme{background:#333333 url(../img/backgrounds/thatched.png) repeat top left;box-shadow:inset 0px 0px 15px #111111, inset 0px 0px 15px #444444;display:none;max-width:100%;padding-bottom:20px;padding-top:20px;}
 	.breakout{border-radius:3px;box-shadow:0px 0px 5px #111111;float:right;font-size:1.5em;font-weight:100;}
 		.breakout .inner{margin:20px;}
