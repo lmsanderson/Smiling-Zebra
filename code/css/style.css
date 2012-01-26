@@ -62,7 +62,7 @@ html5 boilerplate
 	
 	q{quotes:none;}
 	q:before,q:after{content:"";content:none;}
-	small{font-size:85%;}
+	small{font-size:1.3em;}
 	
 	/*position subscript and superscript content without 
 	affecting line-height: gist.github.com/413930*/
@@ -160,25 +160,96 @@ table { border-collapse: collapse; border-spacing: 0; }
 /*@--@*/
 
 /*
-base
+1.base
 */
-
+body{background:#ffffff;}
 /*@--@*/
 
 /*
-layout
+2.elements
+*/
+	
+	/*
+		1.headings
+	*/
+	
+	/*1.headings*/
+		
+		/*1.1.h1*/
+		h1{margin:0;}
+			
+			#brand{color:#ffffff;}
+		/*@*/
+		
+		/*1.2.h2*/
+		h2{font-size:1.8em;font-weight:400;margin:0;}
+			
+		/*@*/
+		
+	/*@*/
+	
+	/*2.body fonts*/
+		
+		/*1.paragraph*/
+		p{}
+		/*@*/
+		
+		/*3.subtitles*/
+		#tagline{color:#ffffff;}
+		/*@*/
+		
+	/*@*/
+	
+/*@--@*/
+
+/*
+3.layout
+*/
+	
+	/*
+		1.#wrapper
+		2.#siteheader
+		3.#main
+		4.#sitefooter
+	*/
+	
+	/*1.#wrapper*/
+	#wrapper{margin:0 auto 50px auto;max-width:980px;min-width:240px;padding:20px;}
+	
+	#masthead{background:#d8eb7a;height:250px;left:0;padding-top:50px;position:relative;right:0;top:0;}
+	
+	/*2.#siteheader*/
+	#siteheader{margin:0 auto 0 auto;max-width:980px;padding:20px 0;}
+	/*@*/
+	
+	/*3.#main*/
+	#main{padding:20px 0 5px 0;}
+	/*@*/
+	
+	/*4.#sitefooter*/
+	#sitefooter{padding:20px 0;}
+	/*@*/
+	
+/*@--@*/
+
+/*
+4.modules
+*/
+
+	/*1.posts and associated bits*/
+	.post{margin-top:20px;}
+	.post:first-child{margin-top:0;}
+	
+	.aboutpost{display:block;margin:10px 0 20px 0;}
+	.meta{background:#d0d0d0;padding:5px;}
+	/*@*/
+
+/*
+5.state
 */
 
 /*
-modules
-*/
-
-/*
-state
-*/
-
-/*
-helpers
+6.helpers
 */
 
 	/*image replacement*/
