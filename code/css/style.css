@@ -82,15 +82,15 @@ button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*ve
 
 button,input{line-height:normal;*overflow:visible;}
 
-button,input[type="button"],input[type="reset"],input[type="submit"]{background:rgba(255,255,255,0.65);border:none;color:rgba(200,90,30,0.9);cursor: pointer;font-family:"Merriweather";font-size:14px;font-weight:400;line-height:20px;margin-top:20px;padding:10px;}
+button,input[type="button"],input[type="reset"],input[type="submit"]{background:rgba(255,255,255,0.65);border:none;color:rgba(200,90,30,0.9);cursor: pointer;font-family:"Merriweather";font-size:14px;font-weight:400;line-height:20px;margin-top:20px;padding:10px;-webkit-appearance:none;}
 
 input[type="checkbox"],input[type="radio"]{box-sizing: border-box;}
 input[type="search"]{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
-input[type="text"],input[type="email"]{background:rgba(255,255,255,0.65);border:none;box-sizing:border-box;display:block;color:rgba(35,35,35,1);font-family:"Merriweather";font-size:14px;font-weight:100;line-height:20px;padding:10px;outline:none;transition:box-shadow 1s linear;width:100%;}
+input[type="text"],input[type="email"]{background:rgba(255,255,255,0.65);border:none;box-sizing:border-box;display:block;color:rgba(35,35,35,1);font-family:"Merriweather";font-size:14px;font-weight:100;line-height:20px;padding:10px;outline:none;transition:box-shadow 1s linear;-webkit-appearance:none;width:100%;}
 input[type="text"]:focus,input[type="email"]:focus{box-shadow:0px 5px 20px rgba(0,0,0,0.2);}
 button::-moz-focus-inner,input::-moz-focus-inner{border: 0;padding:0;}
 
-textarea{background:rgba(255,255,255,0.65);border:none;box-sizing:border-box;display:block;color:rgba(35,35,35,1);font-family:"Merriweather";font-size:14px;font-weight:100;line-height:20px;min-height:300px;padding:10px;overflow:auto;outline:none;transition:box-shadow 1s linear;vertical-align:top;width:100%;}
+textarea{background:rgba(255,255,255,0.65);border:none;box-sizing:border-box;display:block;color:rgba(35,35,35,1);font-family:"Merriweather";font-size:14px;font-weight:100;line-height:20px;min-height:300px;padding:10px;overflow:auto;outline:none;transition:box-shadow 1s linear;vertical-align:top;-webkit-appearance:none;width:100%;}
 textarea:focus{box-shadow:0px 5px 20px rgba(0,0,0,0.2);}
 input:valid,textarea:valid{}
 input:invalid,textarea:invalid{background-color:#f0dddd;}
