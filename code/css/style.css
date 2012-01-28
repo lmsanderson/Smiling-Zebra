@@ -1,201 +1,264 @@
+/*toc
+-----
+-html5 boilerplate
+	contains cross browser compatibility solutions, best practices, and optimisations
+	
+-elements
+	style and content elements such as fonts, anchors, lists
+	
+-structure
+	structural elements such as headers, footers, content areas
+	
+-modules
+	reusable block elements such as post items, calendars, sidebar items
+	
+-mediaqueries
+	solutions for resizing and restyling for different devices via adaptive and responsive approaches
+	
+-print
+	media query containing print styles
+*/
+
 /*
 html5 boilerplate
-	http://www.h5bp.com
 */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
+audio[controls],canvas,video{display:inline-block;*display:inline;*zoom:1;}
 
-	/*@element display*/
-	article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
-	audio[controls],canvas,video{display:inline-block;*display:inline;*zoom:1;}
-	/*@*/
+html{font-size:100%;overflow-y:scroll;-webkit-overflow-scrolling:touch;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+body{margin:0;font-size:13px;line-height:1.231;}
+body,button,input,select,textarea{font-family:sans-serif;color:#222;}
 
-	/*@base*/
-	
-	/*
-	 * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
-	 *    http://clagnut.com/blog/348/#c790
-	 * 2. Force vertical scrollbar in non-IE
-	 * 3. Remove Android and iOS tap highlight color to prevent entire container being highlighted
-	 *    www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
-	 * 4. Prevent iOS text size adjust on device orientation change, without disabling user zoom
-	 *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
-	 */
-	
-	html{font-size:100%;overflow-y:scroll;-webkit-overflow-scrolling:touch;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
-	body{margin:0;font-size:13px;line-height:1.231;}
-	body,button,input,select,textarea{font-family:sans-serif;color:#222;}
-	
-	/* 
-	 * These selection declarations have to be separate
-	 * No text-shadow: twitter.com/miketaylr/status/12228805301
-	 * Also: hot pink!
-	 */
-	
-	::-moz-selection{background:#fe57a1;color:#fff;text-shadow:none;}
-	::selection{background:#fe57a1;color:#fff;text-shadow:none;}
-	/*@*/
+::-moz-selection{background:#fe57a1;color:#fff;text-shadow:none;}
+::selection{background:#fe57a1;color:#fff;text-shadow:none;}
 
+a:hover,a:active {outline: 0;}
+
+abbr[title]{border-bottom:1px dotted;}
+
+b,strong{font-weight:bold;}
+
+blockquote{margin:1em 40px;}
+
+dfn {font-style: italic;}
+
+hr{display:block;height: 1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}
+
+ins{background:#ff9;color:#000;text-decoration:none;}
+
+mark{background:#ff0;color:#000;font-style:italic;font-weight:bold; }
+
+pre,code,kbd,samp{font-family:monospace,monospace;_font-family:'courier new',monospace;font-size:1em;}
+
+pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word;}
+
+q{quotes:none;}
+q:before,q:after{content:"";content: none;}
+
+small{font-size:85%;}
+
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
+
+ul, ol{margin:1em 0;padding:0 0 0 40px;}
+dd{margin:0 0 0 40px;}
+nav ul,nav ol{list-style: none;margin:0;padding:0;}
+
+img{border:0;-ms-interpolation-mode:bicubic;}
+
+svg:not(:root){overflow: hidden;}
+
+figure{margin:0;}
+
+form{margin:0;}
+fieldset{border:0;margin:0;padding:0;}
+
+legend{border:0;*margin-left:-7px;padding:0;}
+
+label{color:rgba(55,55,55,1);cursor:pointer;display:block;font-family:"Merriweather";font-size:16px;font-weight:100;line-height:22px;margin:20px 0 10px 0;text-align:left;}
+
+button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle;}
+
+button,input{line-height:normal;*overflow:visible;}
+
+button,input[type="button"],input[type="reset"],input[type="submit"]{background:rgba(255,255,255,0.65);border:none;color:rgba(200,90,30,0.9);cursor: pointer;font-family:"Merriweather";font-size:14px;font-weight:400;line-height:20px;margin-top:20px;padding:10px;}
+
+input[type="checkbox"],input[type="radio"]{box-sizing: border-box;}
+input[type="search"]{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+input[type="text"],input[type="email"]{background:rgba(255,255,255,0.65);border:none;box-sizing:border-box;display:block;color:rgba(35,35,35,1);font-family:"Merriweather";font-size:14px;font-weight:100;line-height:20px;padding:10px;outline:none;transition:box-shadow 1s linear;width:100%;}
+input[type="text"]:focus,input[type="email"]:focus{box-shadow:0px 5px 20px rgba(0,0,0,0.2);}
+button::-moz-focus-inner,input::-moz-focus-inner{border: 0;padding:0;}
+
+textarea{background:rgba(255,255,255,0.65);border:none;box-sizing:border-box;display:block;color:rgba(35,35,35,1);font-family:"Merriweather";font-size:14px;font-weight:100;line-height:20px;min-height:300px;padding:10px;overflow:auto;outline:none;transition:box-shadow 1s linear;vertical-align:top;width:100%;}
+textarea:focus{box-shadow:0px 5px 20px rgba(0,0,0,0.2);}
+input:valid,textarea:valid{}
+input:invalid,textarea:invalid{background-color:#f0dddd;}
+
+table{border-collapse:collapse;border-spacing: 0;}
+
+/*
+elements
+*/
+	
+/*toc
+-----
+-fonts
+	import
+	headings
+	paragraph
+	
+-anchors
+	standard
+	specific
+	
+-lists
+	ul
+	ol
+*/
+	
+	/*fonts*/
+	
+		/*import*/
+		@font-face{ 
+			font-family: 'WebSymbolsRegular';
+			src: url('fonts/websymbols-regular-webfont.eot');
+			src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     		url('fonts/websymbols-regular-webfont.woff') format('woff'),
+	     		url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+	     	url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+		}
+		/*@*/
+		
+		/*headings*/
+		h1{font-size:1.5em;font-weight:600;}/*page titles*/
+		h2{font-size:1.2em;font-weight:100;}/*reserved for sub page titles/site*/
+		h3{color:rgba(35,35,35,1);font-family:"Merriweather";font-size:20px;font-weight:100;line-height:30px;}/*content titles*/
+		h4{font-size:1em;font-weight:600;}/*in content titles, first level*/
+		h5{font-size:1em;font-weight:600;text-transform:uppercase;}/*in content titles, second level*/
+		/*@*/
+		
+		/*paragraph*/
+		p{color:rgba(35,35,35,1);font-family:"Merriweather";font-size:16px;font-weight:100;line-height:24px;}
+		sub{}
+		small{}
+		/*@*/
+		
+		/*specified*/
+		#smilingzebra{border-bottom:1px solid #bbbbbb;color:rgba(200,90,30,0.9);font-family:"Amatic SC",Serif;font-size:90px;margin:0;position:relative;text-shadow:2px 2px 0px rgba(150,30,10,0.4);}
+		#smilingzebra:after{border-bottom:1px solid #fff;bottom:-2px;content:"";left:0;position:absolute;right:0;top:0;z-index:-1;}
+		
+		#aboutsite{color:rgba(100,100,100,0.9);font-family:"Raleway";font-size:20px;margin:10px 0 0 0;text-shadow:1px 1px 0px rgba(200,200,200,0.4);}
+		
+		.stktxt{color:rgba(55,55,55,1);display:block;font-family:"Merriweather";font-size:16px;font-weight:100;line-height:24px;}
+		
+		.sectiontitle{border-bottom:1px dashed rgba(100,100,100,0.5);color:rgba(50,50,50,0.7);display:block;font-family:"Nixie One";font-size:35px;margin-bottom:10px;padding-bottom:10px;text-shadow:1px 1px 0px rgba(200,200,200,0.3);text-align:center;}
+		.posttitle{margin:0 0 10px 0;position:relative;text-align:center;}
+		.posttitle:before{border-bottom:1px solid rgba(100,100,255,0.5);content:"";bottom:-2px;left:-40px;position:absolute;right:-10px;top:0;}
+		.posttitle:after{border-bottom:1px solid rgba(100,100,255,0.5);content:"";bottom:0;left:-40px;position:absolute;right:-10px;top:0;}
+		
+		.highlight{background:rgba(225,225,225,0.6);color:rgba(55,55,55,1);font-family:"Merriweather";font-size:16px;font-weight:100;line-height:24px;}
+		
+		.emphasis{color:rgba(55,55,55,1);font-family:"Merriweather";font-size:16px;font-weight:600;line-height:22px;}
+		
+		.quote{color:rgba(55,55,55,1);display:block;font-family:"Merriweather";font-size:16px;font-weight:600;line-height:22px;}
+		
+		/*@*/
+	
+	/*@-@*/
+	
 	/*anchors*/
-	a{color:#00e;}
-	a:visited{color: #551a8b;}
+	a{color:rgba(200,90,30,0.9);font-weight:500;text-decoration:none;}
+	a:hover{background:rgba(200,200,200,0.5);}
+	a:visited{color:rgba(200,90,30,0.9);font-style:italic;}
 	a:focus{outline:thin dotted;}
 	
-	/*improve readability when focused and hovered in all 
-	browsers: people.opera.com/patrickl/experiments/keyboard/test*/
-	a:hover,a:active{outline:0;}
-	/*@*/
-
-	/*@typography*/
-	abbr[title]{border-bottom:1px dotted;}
-	b,strong{font-weight:bold;}
-	blockquote{margin:1em 40px;}
-	dfn{font-style:italic;}
-	hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}
-	ins{background:#ff9;color:#000;text-decoration:none;}
-	mark{background:#ff0;color:#000;font-style:italic;font-weight:bold;}
+	.twitter{display:inline-block;position:relative;padding-left:20px;}
+	.twitter:before{content:"t";left:0;font-family:"WebSymbolsRegular";position:absolute;}
 	
-	/*redeclare monospace font 
-	family: en.wikipedia.org/wiki/User:Davidgothberg/Test59*/
-	pre,code,kbd,samp{font-family:monospace,monospace;_font-family:'courier new',monospace;font-size:1em;}
+	.gplus{display:inline-block;position:relative;padding-left:20px;}
+	.gplus:before{content:"g";left:0;font-family:"WebSymbolsRegular";position:absolute;}
 	
-	/*improve readability of pre-formatted text in all browsers*/
-	pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word;}
+	.gotointro{display:inline-block;position:relative;padding-left:20px;}
+	.gotointro:before{content:"U";left:0;font-family:"WebSymbolsRegular";position:absolute;}
 	
-	q{quotes:none;}
-	q:before,q:after{content:"";content:none;}
-	small{font-size:1.3em;}
+	.gotolatesttweet{display:inline-block;position:relative;padding-left:20px;}
+	.gotolatesttweet:before{content:"t";left:0;font-family:"WebSymbolsRegular";position:absolute;}
 	
-	/*position subscript and superscript content without 
-	affecting line-height: gist.github.com/413930*/
-	sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
-	sup{top:-0.5em;}
-	sub{bottom:-0.25em;}
-	/*@*/
+	.gotoblog{display:inline-block;position:relative;padding-left:20px;}
+	.gotoblog:before{content:"d";left:0;font-family:"WebSymbolsRegular";position:absolute;}
+	
+	.gotocontact{display:inline-block;position:relative;padding-left:20px;}
+	.gotocontact:before{content:"@";left:0;font-family:"WebSymbolsRegular";position:absolute;}
+	
+	.gototop{display:inline-block;position:relative;padding-left:20px;}
+	.gototop:before{content:":";left:0;font-family:"WebSymbolsRegular";position:absolute;}
+	/*@-@*/
 	
 /*@--@*/
 
-/*@lists*/
-ul,ol{margin:1em 0;padding:0 0 0 40px;}
-dd{margin:0 0 0 40px;}
-nav ul,nav ol{list-style:none;margin:0;padding:0;}
-
-	/*@embedded content*/
-	
-	/*
-	 * Improve image quality when scaled in IE7
-	 * code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
-	 */
-	img{border:0;-ms-interpolation-mode:bicubic;}
-	/*
-	 * Correct overflow displayed oddly in IE9 
-	 */
-	svg:not(:root){overflow:hidden;}
-	/*@*/
-
-	/*@figures*/
-	figure{margin:0;}
-	/*@*/
-
-	/*@forms*/
-	form{margin:0;}
-	fieldset{border:0;margin:0;padding:0;}
-	/*@*/
-	
-	/*color inheritence and alignment*/
-	/* 
-	 * 1. Correct color not inheriting in IE6/7/8/9 
-	 * 2. Correct alignment displayed oddly in IE6/7 
-	 */
-	legend{border:0;*margin-left:-7px;padding:0;}
-	/*indicate that 'label' will shift focus to 
-	the associated form element*/
-	label{cursor:pointer;}
-	/*@*/
-	
-	/*correct font sizes*/
-	/*
-	 * 1. Correct font-size not inheriting in all browsers
-	 * 2. Remove margins in FF3/4 S5 Chrome
-	 * 3. Define consistent vertical alignment display in all browsers
-	 */
-	button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle;}
-	/*@*/
-	
-	/*correct line-height and spacing*/
-	/*
-	 * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
-	 * 2. Correct inner spacing displayed oddly in IE6/7
-	 */
-	button,input{line-height:normal;*overflow:visible;}
-	/*@*/
-	
-	
 /*
- * 1. Display hand cursor for clickable form elements
- * 2. Allow styling of clickable form elements in iOS
- */
-button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;}
-/*
- * Consistent box sizing and appearance
- */
-input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
-input[type="search"] { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
-/* 
- * Remove inner padding and border in FF3/4
- * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ 
- */
-button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
-/* Remove default vertical scrollbar in IE6/7/8/9 */
-textarea { overflow: auto; vertical-align: top; }
-
-/* Colors for form validity */
-input:valid, textarea:valid {  }
-input:invalid, textarea:invalid { background-color: #f0dddd; }
-/*@--@*/
-
-/* =============================================================================
-   Tables
-   ========================================================================== */
-
-table { border-collapse: collapse; border-spacing: 0; }
-/*@--@*/
-
-/*
-1.base
+structure
 */
-body{background:#ffffff;}
-/*@--@*/
 
-/*
-2.elements
-*/
+/*toc
+-----
+-page
+	body
+
+-container
+	#container
 	
-	/*
-		1.headings
-	*/
+-header
+	#siteheader
 	
-	/*1.headings*/
+-contentarea
+	#main
+		#latesttweet
+	
+-footer
+	#sitefooter
+*/	
+	
+	/*page*/
+	html{background:url(../img/bg/noisy.jpg) repeat top left;}
+	/*@*/
+	
+	/*header*/
 		
-		/*1.1.h1*/
-		h1{margin:0;}
-			
-			#brand{color:#ffffff;}
+		/*@#siteheader*/
+		#siteheader{background:rgba(175,175,175,0.30);border-bottom:1px dashed rgba(0,0,0,0.3);box-shadow:0px -10px 10px 10px rgba(0,0,0,0.5);clear:both;margin-bottom:50px;position:relative;}
+		#siteheader:after{background:url(../img/bg/fabric.png) repeat top left;border-bottom:2px solid rgba(0,0,0,0.1);bottom:-20px;content:"";height:20px;left:0;opacity:0.5;position:absolute;right:0;z-index:-1;}
+		
+			#siteheader .inner{margin:0 auto;max-width:600px;padding:20px;text-align:center;}
 		/*@*/
 		
-		/*1.2.h2*/
-		h2{font-size:1.8em;font-weight:400;margin:0;}
+	/*@-@*/
+	
+	/*contentarea*/
+	
+		/*@#main*/
+		#main .inner{margin:0 auto;max-width:600px;position:relative;}
+		#main .inner:before{border-left:2px dotted rgba(200,200,200,0.9);bottom:0;content:"";left:-80px;position:absolute;top:0;right:0;}
+		
+			/*@.content*/
+			.content{margin-bottom:100px;}
+				.content:last-child{margin-bottom:0;}
+			/*@*/
 			
 		/*@*/
-		
-	/*@*/
 	
-	/*2.body fonts*/
+	/*@-@*/
+	
+	/*footer*/
+	
+		/*#sitefooter*/
+		#sitefooter{background:rgba(175,175,175,0.30);border-top:1px dashed rgba(0,0,0,0.3);box-shadow:0px 2px 10px 1px rgba(0,0,0,0.5);clear:both;position:relative;margin-top:50px;}
+		#sitefooter:before{background:url(../img/bg/fabric.png) repeat top left;border-top:2px solid rgba(0,0,0,0.1);content:"";height:20px;left:0;opacity:0.5;position:absolute;right:0;top:-20px;z-index:-1;}
 		
-		/*1.paragraph*/
-		p{}
-		/*@*/
-		
-		/*3.subtitles*/
-		#tagline{color:#ffffff;}
+			#sitefooter .inner{margin:0 auto;max-width:600px;padding:20px;text-align:center;}
+			
+			#sitefooter #copy{margin-top:50px;}
 		/*@*/
 		
 	/*@*/
@@ -203,97 +266,129 @@ body{background:#ffffff;}
 /*@--@*/
 
 /*
-3.layout
+modules
 */
-	
-	/*
-		1.#wrapper
-		2.#siteheader
-		3.#main
-		4.#sitefooter
-	*/
-	
-	/*1.#wrapper*/
-	#wrapper{margin:0 auto 50px auto;max-width:980px;min-width:240px;padding:20px;}
-	
-	#masthead{background:#d8eb7a;height:250px;left:0;padding-top:50px;position:relative;right:0;top:0;}
-	
-	/*2.#siteheader*/
-	#siteheader{margin:0 auto 0 auto;max-width:980px;padding:20px 0;}
+	/*@.socialnav*/
+	.socialnav{margin-top:10px;}
+	.socialnav li{display:inline;margin-right:20px;}
+		.socialnav li:last-child{margin-right:0;}
 	/*@*/
 	
-	/*3.#main*/
-	#main{padding:20px 0 5px 0;}
+	/*@.mobilenav*/
+	/*used exclusively for iPhones (or similar) to help navigate the length of the page*/
+	.mobilenav{background:rgba(255,255,255,0.95);border:1px solid #d5d5d5;border-radius:5px;display:none;margin-top:20px;}
+	.mobilenav li{border-bottom:1px solid #d5d5d5;display:block;}
+		.mobilenav li:last-child{border-bottom:none;}
+	.mobilenav a{padding-bottom:10px;padding-top:10px;width:auto;}
+		
+	.mobilenav li:hover{background:rgba(200,90,30,0.9);text-decoration:none;}
+		.mobilenav li:hover a{color:rgba(255,255,255,0.95);}
 	/*@*/
 	
-	/*4.#sitefooter*/
-	#sitefooter{padding:20px 0;}
+	/*@.gotonav*/
+	.gotonav li{padding:10px 0;}
+	/*@*/
+	
+	/*.breakout*/
+	/*used to grab an excerpt and make it prominent within an article*/
+	.breakout{background:rgba(255,255,255,0.95);position:relative;}
+	.breakout:before{color:rgba(200,90,30,0.9);content:'c';display:block;font-family:"WebSymbolsRegular";font-size:30px;left:0;line-height:59px;margin-left:12px;position:absolute;}
+		
+		.breakout .inner{padding:10px;}
+			
+			.breakout .quote{padding-left:55px;}
+	/*@*/
+	
+	/*@.post*/
+	/*papery looking background to give a "notebook feel" for blog posts*/
+	.post{background:rgba(255,255,255,0.95);position:relative;margin-bottom:20px;padding:10px 10px 10px 40px;}
+	.post:before{background:rgba(255,100,100,0.5);bottom:0;content:"";left:30px;position:absolute;top:0;width:2px;}
+		
+		.post p{position:relative;}
+		.post p:before{bottom:0;content:"";left:-40px;position:absolute;right:-10px;top:0;}
+	/*@*/
+	
+	/*@.aboutpost*/
+	/*contains information - meta data - relating to a post*/
+	.aboutpost{text-align:center;}
+		
+		.aboutpost .author{color:rgba(55,55,55,1);font-family:"Merriweather";font-size:14px;font-weight:100;line-height:14px;margin-right:15px;padding-left:20px;position:relative;}
+		.aboutpost .author:before{color:rgba(200,90,30,0.9);content:"U";font-family:"WebSymbolsRegular";left:0;line-height:10px;position:absolute;}
+		
+		.aboutpost .date{color:rgba(55,55,55,1);font-family:"Merriweather";font-size:14px;font-weight:100;line-height:14px;padding-left:20px;position:relative;}
+		.aboutpost .date:before{color:rgba(200,90,30,0.9);content:"q";font-family:"WebSymbolsRegular";left:0;line-height:10px;position:absolute;}
+	/*@*/
+	
+	/*.tweet*/
+	/*used to display posts pulled from twitter*/
+	.tweet{background:rgba(255,255,255,0.95);border-radius:5px;box-shadow:0px 40px 80px rgba(0,0,0,0.5);margin:20px 0;padding:10px;position:relative;}
+	.tweet:after{content:"";border-left:20px solid transparent;border-right:20px solid transparent;border-top:20px solid rgba(255,255,255,1);bottom:-20px;height:0;position:absolute;right:45%;width:0;}
+	/*@*/
+	
+	/*@#sidebar*/
+	/*currently just used as a return to top link for desktop, may evolve at a later date*/
+	#sidebar{background:rgba(255,255,255,.8);border-radius:5px;box-shadow:0px 40px 20px rgba(0,0,0,0.2);padding:10px;position:absolute;left:-205px;z-index:1;}
+	#sidebar:after{content:"";content:"";border-bottom:10px solid transparent;border-left:10px solid rgba(255,255,255,1);border-top:10px solid transparent;bottom:0px;height:0;position:absolute;right:-10px;top:46.5%;width:0;}
 	/*@*/
 	
 /*@--@*/
 
-/*
-4.modules
-*/
 
-	/*1.posts and associated bits*/
-	.post{margin-top:20px;}
-	.post:first-child{margin-top:0;}
-	
-	.aboutpost{display:block;margin:10px 0 20px 0;}
-	.meta{background:#d0d0d0;padding:5px;}
-	/*@*/
 
-/*
-5.state
-*/
-
-/*
-6.helpers
-*/
-
-	/*image replacement*/
-	.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
-	.ir br { display: none; }
-	/*@*/
-	
-	/*hiding
-		hide for both screenreaders and browsers:
-		css-discuss.incutio.com/wiki/Screenreader_Visibility*/
-	.hidden{display:none;visibility:hidden;}
-	
-	/*hide only visually, but have it available for screenreaders: by Jon Neal.
-	www.webaim.org/techniques/css/invisiblecontent/ & j.mp/visuallyhidden*/
-	.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;}
-
-	/*extends the .visuallyhidden class to allow the element to be 
-	focusable when navigated to via the keyboard: drupal.org/node/897638*/
-	.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static; width:auto;}
-
-	/*hide visually and from screenreaders, but maintain layout*/
-	.invisible{visibility:hidden;}
-
-	/*contain floats: nicolasgallagher.com/micro-clearfix-hack/*/ 
-	.clearfix:before,.clearfix:after{content:"";display:table;}
-	.clearfix:after{clear:both;}
-	.clearfix{zoom:1;}
-	/*@*/
 
 
 /*
-media queries
+helpers
 */
 
-	/*iphone*/
-	@media only screen and (max-width:680px){
-	  
-	}
-	/*@*/
-	
-	/*ipad*/
-	@media only screen and (max-width:968px) {
+.ir{display: block;text-indent:-999em;overflow:hidden;background-repeat:no-repeat;text-align:left;direction:ltr;}
+.ir br{display:none;}
 
-	}
+.hidden{display:none;visibility:hidden;}
+
+.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;}
+
+.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto;}
+
+.invisible{visibility:hidden;}
+
+.clearfix:before,.clearfix:after{content:"";display:table;}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
+
+/*@--@*/
+
+/*
+mediaqueries
+*/
+
+/*toc
+-----
+-iphone
+	variations
+-ipad
+	variations
+*/
+
+@media only screen and (max-width: 480px){
+	.mobilenav{display:block;}
+}
+
+@media only screen and (max-width: 764px){
+	#smilingzebra{font-size:50px;}
+	
+	#main{padding:0 20px;}
+	
+		#latesttweet{height:auto;}
+		.tweet{box-shadow:none;}
+		.tweet:after{border:none;}
+		.author,.date{display:inline-block;}
+}
+
+@media only screen and (max-width: 1024px){
+	#main .inner:before{border:none;}
+	#sidebar{display:none;}
+}
 /*@--@*/
 
 /*
@@ -301,17 +396,16 @@ print
 */
 
 @media print {
-  	*{background:transparent!important;color:black!important;text-shadow:none!important;filter:none!important;-ms-filter:none!important;}/*black prints faster: sanbeiji.com/archives/953*/
-  	a,a:visited{color:#444!important;text-decoration:underline;}
- 	a[href]:after{content:" (" attr(href) ")";}
-  	abbr[title]:after{content:" (" attr(title) ")";}
-  	.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:"";}/*don't show links for images, or javascript/internal links*/
-  	pre,blockquote{border:1px solid #999;page-break-inside:avoid;}
-  	thead{display:table-header-group;}/*css-discuss.incutio.com/wiki/Printing_Tables*/
-  	tr,img{page-break-inside:avoid;}
-  	img{max-width:100%!important;}
-  	@page{margin:0.5cm;}
-  	p,h2,h3{orphans:3;widows:3;}
-  	h2,h3{page-break-after:avoid;}
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
 }
-/*@--@*/

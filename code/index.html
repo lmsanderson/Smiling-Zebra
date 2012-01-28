@@ -3,102 +3,291 @@
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-	<title>Smiling Zebra - A web technologies blog</title>
+	
+	<title>Smiling Zebra - Programming &amp; web technology blog</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
-
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-
-	<link rel="stylesheet" href="css/style.css">
 	
-	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<link href="css/style.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer' rel='stylesheet' type='text/css'>
 	
 	<script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
 <body>
+
+	<div class="clearfix" id="container">
 	
-	<section id="masthead">
-		
-			<header class="clearfix" id="siteheader">
+		<header id="siteheader">
 			
-				<h1 id="brand">Smiling Zebra</h1>
-				<h2 id="tagline">A web technologies blog</h2>
+			<div class="inner">
+				<h1 id="smilingzebra">Smiling Zebra</h1>
+				<h2 id="aboutsite">Programming &amp; web technologies blog</h2>
+				
+				<nav class="socialnav">
+					<ul>
+						<li><a class="twitter" href="https://twitter.com/#!/mksanderson">Follow me on Twitter</a></li>
+						<li><a class="gplus" href="https://plus.google.com/108473742921094490544/posts">Circle me on Google+</a></li>
+					</ul>
+				</nav>
+				<!--@.socialnav-->
+				
+				<nav class="mobilenav">
+					<ul class="pageto">
+						<li><a class="gotointro scroll" href="#introduction">About Me</a></li>
+						<li><a class="gotolatesttweet scroll" href="#latesttweet">Latest Tweet</a></li>
+						<li><a class="gotoblog scroll" href="#blog">Blog</a></li>
+						<li><a class="gotocontact scroll" href="#sitefooter">Contact</a></li>
+					</ul>
+				</nav>
+				<!-- @.mobile-->
+				
+			</div>
+			<!-- @.inner-->
 			
-			</header>
-			<!-- @#siteheader-->
-			
-	</section>
-	<!-- @#masthead-->
-	
-	<div id="wrapper">
+		</header>
+		<!-- @#siteheader-->
 		
-		
-		
-		
-		
-		<div class="clearfix" id="main" role="main">
+		<div id="main" role="main">
 			
 			<div class="inner">
 				
-				<div class="post">
+				<aside id="sidebar">
 					
-					<h2>HTML5 Please!</h2>
+					<nav class="gotonav">
+						<ul>
+							<li><a class="gototop scroll" href="#siteheader">Top</a></li>
+							<li><a class="gotointro scroll" href="#introduction">About Me</a></li>
+							<li><a class="gotolatesttweet scroll" href="#latesttweet">Latest Tweet</a></li>
+							<li><a class="gotoblog scroll" href="#blog">Blog</a></li>
+							<li><a class="gotocontact scroll" href="#sitefooter">Contact</a></li>
+						</ul>
+					</nav>
+					<!-- @.gotonav-->
+					
+				</aside>
+				<!-- @#sidebar-->
+				
+				<div class="content" id="introduction">
+				
+					<span class="highlight">
+						Hi, I'm Matthew Sanderson. I am a User Experience Developer (aka Front End Developer, aka Interface Developer) - henceforth referred to as a "UX Developer" or UXD.
+					</span>
+					
+					<p>
+						<span class="emphasis">The reason for the overly complex title explanation?</span> Well, as my role has evolved so has my title, and I think that&rsquo;s worth a short explanation.
+					</p>
+					
+					<p>
+						When I began developing web pages with <span class="emphasis">HTML</span> and <span class="emphasis">CSS</span>, my role was - like the languages themselves - much simpler. I was 
+						handed a design and I coded it, or if I was feeling particularly inspired, I would do both.
+					</p>
+					
+					<span class="emphasis">Simple right?</span>
+					
+					<p>
+						Anyhow, as time went by and the web became an interconnected mess of terrible sites, beautiful sites, and inspiring sites that managed to work great code and design together, so too my role became more complex.
+					</p>
+					
+					<div class="breakout">
+						
+						<div class="inner">
+							<span class="quote">As time went by and the web became an interconnected mess of terrible sites, beautiful sites, and inspiring sites</span>
+						</div>
+						<!-- @.inner-->
+						
+					</div>
+					<!-- @.breakout-->
+					
+					<p>
+						I became the bridge between the Designer and the Back-End Developer, I wasn't the one designing the interface and I wasn't the one providing all of the back end functionality, but I was (and am) the implementor
+						of the interface that sits on the backend systems, and is the design envisioned.
+					</p>
+					
+					<p>
+						So it came to be that I wasn&rsqou;s really "just" a Front-End Developer anymore, but really the dictator of the User&rsquo;s experience of a web site, thus UXD became my title.
+					</p>
+					
+					<span class="highlight">
+						Contained within this site you&rsquo;ll find a variety of blog posts relating to new programming and web technologies, as well as general technology news, as well as social posts and alerts.
+					</span>
+					
+					
+				</div>
+				<!-- @#introduction-->
+				
+				<div class="content" id="latesttweet">
+					
+					<h2 class="sectiontitle">Latest Tweet</h2>
 					
 					<div class="aboutpost">
-						<span class="meta">Posted 24th January 2012 by Matt Sanderson</span>
+						<span class="author">
+							Matthew Sanderson
+						</span>
+						
+						<span class="date">
+							28<sup>th</sup> January 2012
+						</span>
+						
 					</div>
 					<!-- @.aboutpost-->
 					
-					<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. 
-						Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit. 
-						Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. 
-						Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. 
-						Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. 
-						Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci.
-					</p>
-	
-					<p>
-						Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-						In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. 
-						Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. 
-						Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. 
-						Donec vel ligula. Sed felis.
-					</p>
-	
+					<div class="tweet">
+						<span class="stktxt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis 
+						scelerisque convallis, augue neque tempor enim, et mattis dimentum biben. Nam tinciduntumauris, ci. <a href="#">#loremipsum</a></span>
+					</div>
+					<!-- @.tweet-->
+					
 				</div>
-				<!-- @.post-->
-			
+				<!-- @#latesttweet-->
+				
+				<div class="content" id="blog">
+					
+					<h2 class="sectiontitle">Blog</h2>
+					
+					<div class="post">
+						
+						<h3 class="posttitle">Lorem ipsum dolar sit amet consectotor sit amet consectutor</h3>
+						
+						<div class="aboutpost">
+							<span class="author">
+								Matthew Sanderson
+							</span>
+						
+							<span class="date">
+								28<sup>th</sup> January 2012
+							</span>
+							
+						</div>
+						<!-- @.aboutpost-->
+						
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis 
+							scelerisque convallis, augue neque tempor enim, et mattis dimentum biben. Nam tinciduntumauris, ci.
+						</p>
+						
+						<div class="breakout">
+							<span class="quote">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis 
+								scelerisque convallis, augue neque tempor enim, et mattis dimentum biben. Nam tinciduntumauris, ci.
+							</span>
+						</div>
+						<!-- @.breakout-->
+						
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis 
+							scelerisque convallis, augue neque tempor enim, et mattis dimentum biben. Nam tinciduntumauris, ci.
+						</p>
+						
+					</div>
+					<!-- @.post-->
+					
+					<div class="post">
+						
+						<h3 class="posttitle">Post title</h3>
+						
+						<div class="aboutpost">
+							<span class="author">
+								Matthew Sanderson
+							</span>
+						
+							<span class="date">
+								28<sup>th</sup> January 2012
+							</span>
+							
+						</div>
+						<!-- @.aboutpost-->
+						
+						<span class="highlight">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis 
+							scelerisque convallis, augue neque tempor enim, et mattis dimentum biben. Nam tinciduntumauris, ci.
+						</span>
+						
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis 
+							scelerisque convallis, augue neque tempor enim, et mattis dimentum biben. Nam tinciduntumauris, ci.
+						</p>
+						
+					</div>
+					<!-- @.post-->
+					
+				</div>
+				<!-- @#blog-->
+				
 			</div>
 			<!-- @.inner-->
 			
 		</div>
 		<!-- @#main-->
+		
+		<footer id="sitefooter">
 			
-		<footer class="clearfix" id="sitefooter">
-			<span>&copy; 2012 Smiling Zebra.</span>
+			<div class="inner">
+				
+				<div id="contactme">
+					<h2 class="sectiontitle">Contact Me</h2>
+					<form action="email.php" id="contactform" method="post">
+						<fieldset>
+								<label for="inpname">Your name:</label>
+								<input id="inpname" placeholder="Your name" type="text">
+							
+								<label for="inpemail">Your email:</label>
+								<input id="inpemail" placeholder="Your email" type="email">
+							
+								<label for="inpmessage">Your message:</label>
+								<textarea id="inpmessage" placeholder="Your message"></textarea>
+								
+								<input type="reset" value="Clear">
+								<input type="submit" value="Send">
+						</fieldset>
+					</form>
+				</div>
+				<!-- @#contactme-->
+				
+				<div id="copy">
+					<span class="stktxt">&copy;2012 Matthew Sanderson</span>
+				</div>
+				<!-- @#copy-->
+				
+			</div>
+			<!-- @.inner-->
+			
 		</footer>
 		<!-- @#sitefooter-->
 		
 	</div>
-	<!-- @#wrapper -->
+	<!-- @#container-->
+	
+  	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+	<script src="js/libs/prefixfree.min.js"></script>
+	
+  	<script defer src="js/plugins.js"></script>
+  	<script defer src="js/script.js"></script>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-
-	<script src="js/plugins.js"></script>
-	<script src="js/script.js"></script>
+	<script> 
+		// Change UA-XXXXX-X to be your site's ID
+		window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+			Modernizr.load({
+				load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+			});
+	</script>
 
 	<!--[if lt IE 7 ]>
-		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
-		<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+		<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
 	<![endif]-->
-
+  
 </body>
 
 </html>
