@@ -29,8 +29,8 @@ html{font-size:100%;overflow-y:scroll;-webkit-overflow-scrolling:touch;-webkit-t
 body{margin:0;font-size:13px;line-height:1.231;}
 body,button,input,select,textarea{font-family:sans-serif;color:#222;}
 
-::-moz-selection{background:#fe57a1;color:#fff;text-shadow:none;}
-::selection{background:#fe57a1;color:#fff;text-shadow:none;}
+::-moz-selection{background:rgba(100,100,100,0.5);color:#ffffff;text-shadow:none;}
+::selection{background:rgba(100,100,100,0.5);color:#ffffff;text-shadow:none;}
 
 a:hover,a:active {outline: 0;}
 
@@ -239,7 +239,7 @@ structure
 	
 		/*@#main*/
 		#main .inner{margin:0 auto;max-width:600px;position:relative;}
-		#main .inner:before{border-left:2px dotted rgba(200,200,200,0.9);bottom:0;content:"";left:-80px;position:absolute;top:0;right:0;}
+		#main .inner:before{border-left:2px dotted rgba(200,200,200,0.9);bottom:-45px;content:"";left:-80px;position:absolute;top:0;right:0;}
 		
 			/*@.content*/
 			.content{margin-bottom:100px;}
@@ -256,8 +256,8 @@ structure
 		#sitefooter{background:rgba(175,175,175,0.30);border-top:1px dashed rgba(0,0,0,0.3);box-shadow:0px 2px 10px 1px rgba(0,0,0,0.5);clear:both;position:relative;margin-top:50px;}
 		#sitefooter:before{background:url(../img/bg/fabric.png) repeat top left;border-top:2px solid rgba(0,0,0,0.1);content:"";height:20px;left:0;opacity:0.5;position:absolute;right:0;top:-20px;z-index:-1;}
 		
-			#sitefooter .inner{margin:0 auto;max-width:600px;padding:20px;text-align:center;}
-			
+			#sitefooter .inner{margin:0 auto;max-width:600px;padding:20px;position:relative;text-align:center;}
+			#sitefooter .inner:before{border-left:2px dotted rgba(200,200,200,0.9);bottom:0;content:"";left:-60px;position:absolute;top:0;right:0;}
 			#sitefooter #copy{margin-top:50px;}
 		/*@*/
 		
@@ -291,12 +291,12 @@ modules
 	
 	/*.breakout*/
 	/*used to grab an excerpt and make it prominent within an article*/
-	.breakout{background:rgba(255,255,255,0.95);position:relative;}
+	.breakout{background:url(../img/bg/fabric.png) repeat top left;position:relative;}
 	.breakout:before{color:rgba(200,90,30,0.9);content:'c';display:block;font-family:"WebSymbolsRegular";font-size:30px;left:0;line-height:59px;margin-left:12px;position:absolute;}
 		
 		.breakout .inner{padding:10px;}
 			
-			.breakout .quote{padding-left:55px;}
+			.breakout .quote{padding-left:50px;}
 	/*@*/
 	
 	/*@.post*/
@@ -332,10 +332,6 @@ modules
 	/*@*/
 	
 /*@--@*/
-
-
-
-
 
 /*
 helpers
